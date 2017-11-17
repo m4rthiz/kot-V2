@@ -1,0 +1,275 @@
+
+.col-md-12,
+.col-xs-12 {
+    min-height: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, serif;
+    font-size: 1.2em;
+    color: #000;
+}
+
+#fondmd,
+#fondxs {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#logotitre {
+    margin: 0;
+    padding: 0;
+}
+
+#ban {
+    width: 100%;
+    height: 65%;
+}
+
+#left {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*menu*/
+
+.icon-bar
+/*menu hamburger*/
+
+{
+    background-color: black;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: left;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+nav {
+    margin-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-default {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Poiret One', arial, sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #912309;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    color: #912309;
+}
+
+.navbar-nav>li {
+    width: 100%;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #912309;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.dropdown-menu {
+    border-radius: 5px;
+    background-color: rgba(46, 17, 2, .9);
+}
+
+.dropdown-menu>li>a {
+    color: antiquewhite;
+}
+
+.dropdown-menu>li>a:hover {
+    color: antiquewhite;
+    background-color: rgba(46, 17, 2, .9);
+}
+
+
+/*boutons reseaux*/
+
+.boutons {
+    margin-top: 10px;
+    margin-left: 30%;
+}
+
+.boutons>a>i {
+    margin: 5px;
+}
+
+.boutons>a {
+    text-decoration: none;
+    color: black;
+}
+
+.boutons>a:hover {
+    color: #912309;
+}
+
+
+/*Article*/
+
+.article {
+   
+    font-size: 1.2em;
+    margin:0px;
+    padding: 60px 40px 0 70px;
+}
+
+.article>h1 {
+    font-family: 'Poiret One', arial, sans-serif;
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-shadow: -3px 3px 5px grey;
+}
+
+.article>h2 {
+    font-family: 'Poiret One', arial, sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.article>h3 {
+    font-family: 'Poiret One', arial, sans-serif;
+    font-size: 1.6em;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.article>p {
+    margin: 20px 0;
+}
+
+.media>iframe {
+    margin-bottom: 30px;
+}
+
+.photo>img {
+    width: 90%;
+}
+
+.insert{
+    width: 50vw;
+    
+}
+
+.logo {
+    width: 150px;
+}
+.logo-small{
+    width:90px;
+    margin:5px;
+}
+
+
+/*PAGE BIO*/
+
+.bio {
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+
+/*Caroussel*/
+
+
+#carousel {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 200px;
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+    background-color: black;
+    box-shadow: -10px 8px 5px rgba(0, 0, 0, .5);
+    justify-content: space-around;
+}
+
+.carousel-inner>.item {
+    width: 100%;
+}
+
+
+/*Audio*/
+
+.audio {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 0;
+    justify-content: center;
+}
+
+.player {
+    width: 95%;
+    height: 70px;
+    margin-top: 5px;
+    box-shadow: -10px 8px 5px rgba(0, 0, 0, .5);
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+}
+
+.ban-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: url(img/footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 150px;
+    padding: 30px;
+}
+
+.ban-foot ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+.ban-foot ul li {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.ban-foot ul li a {
+    text-decoration: none;
+    color: black;
+}
+
