@@ -1,0 +1,35 @@
+/**
+** node-sass --watch web/sass/main.scss web/css/main.css
+*/
+
+/**
+*************************** RESET *********************
+*/
+@import 'partials/reset';
+/**
+*************************** Variable *********************
+ */
+@import 'partials/variables';
+/**
+*************************** Fonctions *********************
+*/
+//@import 'partials/mixins';
+/**
+*************************** Media Querie *********************
+ */
+@import 'partials/queries/tablette';
+@import 'partials/queries/smartphone';
+/**
+*************************** Components *********************
+ */
+@import 'partials/components/header';
+@import 'partials/components/navbar';
+@import 'partials/components/footer';
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro');
+@import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");
+
+@font-face{
+  font-family: ERASDEMI;
+  src: url('../fonts/ERASDEMI.TTF');
+}
