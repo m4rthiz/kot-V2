@@ -1,0 +1,22 @@
+
+.ban{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 205px;
+  background-image: url('../../../img/header-kot-V2.png');
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  z-index: 1;
+  img{
+    width: 300px;
+    margin: auto;
+  }
+  span{
+    font-family: $font1, arial, sans-serif;
+    color: $color2;
+  }
+}

@@ -22,14 +22,28 @@
 /**
 *************************** Components *********************
  */
-@import 'partials/components/header';
-@import 'partials/components/navbar';
+@import 'partials/components/ban.scss';
+@import 'partials/components/_navbar.scss';
 @import 'partials/components/footer';
 
 @import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro');
 @import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");
 
-@font-face{
-  font-family: ERASDEMI;
-  src: url('../fonts/ERASDEMI.TTF');
+.row {
+  border: 2px solid red;
+}
+.unique [class~=col] {color:green }
+
+
+
+.container-fluid{
+  padding:0px;
+
+}
+body{
+  background: url('../img/font-Section.jpg') no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

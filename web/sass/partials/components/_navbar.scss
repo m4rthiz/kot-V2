@@ -1,0 +1,14 @@
+.navbar {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  background-image: url('../../../img/fond_menu.png');
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  z-index: 1000;
+  .navbar-right {
+    margin: 10px;
+  }
+}
