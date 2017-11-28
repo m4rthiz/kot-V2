@@ -142,7 +142,7 @@ nav {
     font-family: 'Poiret One', arial, sans-serif;
     font-size: 1.9em;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin: 30px;
     text-decoration: underline;
     text-shadow: -3px 3px 5px grey;
 }
@@ -157,7 +157,7 @@ nav {
 
 .article>h3 {
     font-family: 'Poiret One', arial, sans-serif;
-    font-size: 1.6em;
+
     font-size: 1.2em;
     font-style: italic;
 }

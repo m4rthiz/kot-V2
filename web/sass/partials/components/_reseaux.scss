@@ -1,0 +1,14 @@
+.boutons {
+  margin-top: 10px;
+  margin-left: 30%;
+  a{
+    text-decoration: none;
+    color: black;
+    i{
+      margin: 5px;
+    }
+  }
+  & :hover{
+    color: #912309;
+  }
+}

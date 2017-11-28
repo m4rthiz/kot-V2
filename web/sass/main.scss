@@ -22,19 +22,25 @@
 /**
 *************************** Components *********************
  */
-@import 'partials/components/ban.scss';
-@import 'partials/components/_navbar.scss';
+@import 'partials/components/ban';
+@import 'partials/components/navbar';
 @import 'partials/components/footer';
+@import 'partials/components/audio';
+@import 'partials/components/reseaux';
+@import 'partials/components/slider';
+@import 'partials/components/article';
 
 @import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro');
 @import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");
 
+/*
 .row {
   border: 2px solid red;
 }
-.unique [class~=col] {color:green }
-
-
+[class*="col-"]{
+  border: 2px solid green;
+}
+*/
 
 .container-fluid{
   padding:0px;
@@ -46,4 +52,8 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.aside{
+  padding:60px 0px;
 }

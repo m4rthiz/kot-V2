@@ -215,7 +215,6 @@ textarea {
 *************************** Components *********************
  */
 .ban {
-  margin-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -233,7 +232,14 @@ textarea {
     font-family: "Source Sans Pro", arial, sans-serif;
     color: #FFFFFF; }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000; }
+
 .navbar {
+  width: 100vw;
   border: none;
   border-radius: 0;
   margin: 0;
@@ -243,15 +249,92 @@ textarea {
   -o-background-size: contain;
   background-size: contain;
   z-index: 1000; }
+  .navbar .navbar-brand {
+    width: 133px;
+    padding: 0 20px; }
+    .navbar .navbar-brand .logoSmall {
+      display: block;
+      width: 133px; }
   .navbar .navbar-right {
     margin: 10px; }
+    .navbar .navbar-right li a {
+      color: #000;
+      font-family: "Poiret One", arial, sans-serif;
+      font-size: 1.3em;
+      font-weight: bold; }
 
+.banFoot {
+  height: 80px;
+  background: url("../../../img/header-kot-V2.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Poiret One', arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold; }
+  .banFoot ul {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .banFoot ul li a {
+      text-decoration: none;
+      color: black; }
+
+.boutons {
+  margin-top: 10px;
+  margin-left: 30%; }
+  .boutons a {
+    text-decoration: none;
+    color: black; }
+    .boutons a i {
+      margin: 5px; }
+  .boutons :hover {
+    color: #912309; }
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  height: 200px;
+  margin-top: 70px;
+  margin-right: 10px;
+  margin-bottom: 80px;
+  background-color: black;
+  justify-content: space-around; }
+
+.article {
+  margin-top: 70px;
+  padding: 60px; }
+  .article h1 {
+    font-family: 'Poiret One', arial, sans-serif;
+    font-size: 1.9em;
+    font-weight: bold;
+    margin: 30px;
+    text-decoration: underline;
+    text-align: center; }
+  .article h2 {
+    font-family: 'Poiret One', arial, sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 20px; }
+  .article h3 {
+    font-family: 'Poiret One', arial, sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 20px; }
+  .article p {
+    margin: 20px; }
+
+/*
 .row {
-  border: 2px solid red; }
-
-.unique [class~=col] {
-  color: green; }
-
+  border: 2px solid red;
+}
+[class*="col-"]{
+  border: 2px solid green;
+}
+*/
 .container-fluid {
   padding: 0px; }
 
@@ -261,3 +344,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+.aside {
+  padding: 60px 0px; }

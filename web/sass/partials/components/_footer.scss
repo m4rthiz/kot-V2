@@ -1,0 +1,25 @@
+.banFoot{
+  height:   80px;
+  background: url('../../../img/header-kot-V2.png')no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Poiret One', arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  ul{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    li{
+
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+}

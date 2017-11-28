@@ -1,4 +1,12 @@
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
 .navbar {
+  width: 100vw;
   border: none;
   border-radius: 0;
   margin: 0;
@@ -8,7 +16,23 @@
   -o-background-size: contain;
   background-size: contain;
   z-index: 1000;
+  .navbar-brand {
+    width: 133px;
+    padding: 0 20px;
+    .logoSmall {
+      display: block;
+      width: 133px;
+    }
+  }
   .navbar-right {
     margin: 10px;
+    li {
+      a {
+        color: #000;
+        font-family: $font2, arial, sans-serif;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+    }
   }
 }
