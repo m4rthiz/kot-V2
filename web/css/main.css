@@ -14,8 +14,6 @@
  * Inspired by Normalize.css: http://necolas.github.com/normalize.css/
  */
 /* HTML5 display definitions */
-@import url("https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro");
-@import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");
 section, nav, article, aside, hgroup,
 header, footer, figure, figcaption, details {
   display: block; }
@@ -323,8 +321,43 @@ textarea {
     font-style: italic;
     margin: 20px; }
   .article p {
+    font-family: "Muli";
+    font-size: 1.1em;
     margin: 20px; }
 
+/**
+*************************** Pagess *********************
+ */
+.event {
+  margin: 20px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px; }
+  .event:hover {
+    border-left: solid 7px #ec4300; }
+  .event .date {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poiret One', arial, sans-serif;
+    font-weight: bold; }
+  .event .dateDesc p {
+    padding: 20px;
+    margin: auto; }
+
+.cadreBio {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-end; }
+  .cadreBio .thumbnail {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+/*@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro');
+@import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");*/
 /*
 .row {
   border: 2px solid red;

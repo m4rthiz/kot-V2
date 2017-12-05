@@ -30,8 +30,15 @@
 @import 'partials/components/slider';
 @import 'partials/components/article';
 
-@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro');
-@import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");
+/**
+*************************** Pagess *********************
+ */
+@import "partials/pages/agenda";
+@import "partials/pages/equipe";
+
+
+/*@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro');
+@import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");*/
 
 /*
 .row {

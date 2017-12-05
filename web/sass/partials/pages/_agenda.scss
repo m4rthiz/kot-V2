@@ -1,0 +1,25 @@
+.event{
+  margin: 20px;
+  height:80px;
+  background-color: rgba(0, 0, 0, 0.1);
+  //border-left: solid 7px rgba(236, 184, 115, 0.19);
+  border-radius: 5px;
+
+  &:hover {
+    border-left: solid 7px #ec4300;
+  }
+  .date{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    //margin-top: 20px;
+    font-family: 'Poiret One', arial, sans-serif;
+    font-weight: bold;
+  }
+  .dateDesc{
+    p{
+      padding: 20px;
+      margin:auto;
+    }
+  }
+}

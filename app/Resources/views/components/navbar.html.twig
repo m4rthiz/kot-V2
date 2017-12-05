@@ -11,8 +11,13 @@
     </div>
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-            <li> <a href="{{ path('homepage') }}">Accueil</a> </li>
-            <li><a href="{{ path('agenda') }}">Agenda</a>
+            <li><a href="{{ path('homepage') }}">Accueil</a></li>
+            <li class="dropdown"><a data-toggle="dropdown" href="{{ path('agenda') }}">Agenda <b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="{{ path('agenda') }}#2017">2017</a></li>
+                    <li><a href="{{ path('agenda') }}#2018">2018</a></li>
+                </ul>
             </li>
             <li><a href="{{ path('equipe') }}">Equipe artistique</a></li>
             <li class="dropdown">
@@ -30,8 +35,8 @@
                     <li><a href="{{ path('spectacles') }}#fiche-tech">Fiches techniques</a></li>
                 </ul>
             </li>
-            <li> <a href="{{ path('action') }}">Action culturelle</a> </li>
-            <li> <a href="{{ path('partenaires') }}">Partenaires</a> </li>
+            <li><a href="{{ path('action') }}">Action culturelle</a></li>
+            <li><a href="{{ path('partenaires') }}">Partenaires</a></li>
             <li class="dropdown">
                 <a data-toggle="dropdown" href="#">Medias <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -40,7 +45,7 @@
                     <li><a href="{{ path('ecoutes') }}">Ecoutes</a></li>
                 </ul>
             </li>
-            <li> <a href="{{ path('contact') }}">Contact</a> </li>
+            <li><a href="{{ path('contact') }}">Contact</a></li>
         </ul>
     </div>
 </nav>
