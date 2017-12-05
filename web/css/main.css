@@ -236,19 +236,18 @@ textarea {
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 1000; }
+  z-index: 10; }
 
 .navbar {
+  margin-bottom: 0px;
   width: 100%;
   border: none;
   border-radius: 0;
-  margin: 0;
   background-image: url("../../../img/fond_menu.png");
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
-  background-size: contain;
-  z-index: 1000; }
+  background-size: contain; }
   .navbar .navbar-brand {
     width: 133px;
     padding: 0 20px; }
@@ -305,8 +304,7 @@ textarea {
   justify-content: space-around; }
 
 .article {
-  margin-top: 70px;
-  padding: 60px; }
+  padding: 30px 60px; }
   .article h1 {
     font-family: 'Poiret One', arial, sans-serif;
     font-size: 1.9em;
