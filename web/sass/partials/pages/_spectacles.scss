@@ -1,0 +1,28 @@
+.spectacles {
+  display: flex;
+  justify-content: center;
+    text-align: center;
+  a{
+    h2{
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      margin-top: 5px;
+    }
+
+  }
+  .hideSubTitle {
+    margin:20%;
+    //text-align: center;
+    text-decoration: none;
+    position: absolute;
+    color: $rouge;
+    font-weight:900;
+    font-size: 1.6em;
+    z-index: 10;
+  }
+  .imgShow {
+    width: 250px;
+    background-color: $blockGrey;
+  }
+}

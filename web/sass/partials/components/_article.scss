@@ -1,29 +1,32 @@
-.article{
-    //margin-top: 70px;
-    padding:30px 60px;
-  h1{
+.article {
+  //margin-top: 70px;
+  padding: 30px 60px;
+  h1 {
     font-family: 'Poiret One', arial, sans-serif;
     font-size: 1.9em;
     font-weight: bold;
-    margin: 30px;
+    margin: 20px;
     text-decoration: underline;
     text-align: center;
   }
-  h2{
+  h2 {
     font-family: 'Poiret One', arial, sans-serif;
     font-size: 1.6em;
     font-weight: 600;
     margin: 20px;
   }
-  h3{
+  h3 {
     font-family: 'Poiret One', arial, sans-serif;
     font-size: 1.2em;
     font-style: italic;
     margin: 20px;
   }
-  p{
-    font-family: $font5;
-  font-size: 1.1em;
+  p {
+    font-family: $text;
+    font-size: 1.1em;
     margin: 20px;
+  }
+  .ancre{
+    height: 65px;
   }
 }

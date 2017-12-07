@@ -16,6 +16,18 @@ $(document).ready(function () {
             $(".logoSmall").hide();
         }
     });
+
+    /**************HIDE AND SHOW SUBTITLES**************/
+    $(".hideSubTitle").hide();
+    $(".spectacles")
+        .mouseover(function () {
+             $(this).closest(".spectacles").find(".hideSubTitle").show();
+            $(this).closest(".spectacles").find(".imgShow").css('opacity', '0.2');
+        })
+        .mouseout(function () {
+            $(this).closest(".spectacles").find(".hideSubTitle").hide();
+            $(this).closest(".spectacles").find(".imgShow").css('opacity', '1');
+        });
 });
 /*
 rubik = {

@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 10;
+  z-index: 1000;
  }
 
 .navbar {
@@ -28,7 +28,7 @@
     li {
       a {
         color: #000;
-        font-family: $font2, arial, sans-serif;
+        font-family: $title;
         font-size: 1.3em;
         font-weight: bold;
       }
