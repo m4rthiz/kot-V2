@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Equipe
+ * Artiste
  *
- * @ORM\Table(name="equipe")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\EquipeRepository")
+ * @ORM\Table(name="artiste")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ArtisteRepository")
  */
-class Equipe
+class Artiste
 {
     /**
      * @var int
@@ -79,7 +79,7 @@ class Equipe
      *
      * @param string $firstName
      *
-     * @return Equipe
+     * @return Artiste
      */
     public function setFirstName($firstName)
     {
@@ -103,7 +103,7 @@ class Equipe
      *
      * @param string $lastName
      *
-     * @return Equipe
+     * @return Artiste
      */
     public function setLastName($lastName)
     {
@@ -127,7 +127,7 @@ class Equipe
      *
      * @param array $instruments
      *
-     * @return Equipe
+     * @return Artiste
      */
     public function setInstruments($instruments)
     {
@@ -151,7 +151,7 @@ class Equipe
      *
      * @param string $photo
      *
-     * @return Equipe
+     * @return Artiste
      */
     public function setPhoto($photo)
     {
@@ -175,7 +175,7 @@ class Equipe
      *
      * @param string $partoCirculaire
      *
-     * @return Equipe
+     * @return Artiste
      */
     public function setPartoCirculaire($partoCirculaire)
     {
@@ -199,7 +199,7 @@ class Equipe
      *
      * @param string $description
      *
-     * @return Equipe
+     * @return Artiste
      */
     public function setDescription($description)
     {

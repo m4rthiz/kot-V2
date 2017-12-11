@@ -43,9 +43,10 @@ class Spectacle
     private $description;
 
     /**
-     * @var string
+     * @var array
      *
-     * @ORM\Column(name="distribution", type="string", length=255)
+     * @ORM\Column(name="distribution", type="array", length=255)
+     * @ORM\OneToMany(targetEntity="equipe")
      */
     private $distribution;
 
