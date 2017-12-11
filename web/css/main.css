@@ -326,6 +326,8 @@ textarea {
     margin: 20px; }
   .article .ancre {
     height: 65px; }
+  .article .photoLarge {
+    width: 100%; }
 
 /**
 *************************** Pagess *********************
@@ -367,6 +369,9 @@ textarea {
   display: flex;
   justify-content: center;
   text-align: center; }
+  .spectacles .thumbnail {
+    background-color: rgba(138, 138, 138, 0.72);
+    height: 220px; }
   .spectacles a h2 {
     text-align: center;
     text-decoration: none;
@@ -383,6 +388,10 @@ textarea {
   .spectacles .imgShow {
     width: 250px;
     background-color: rgba(138, 138, 138, 0.72); }
+
+.logo {
+  width: 100px;
+  margin: 10px; }
 
 /*@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro');
 @import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");*/

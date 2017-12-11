@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
     text-align: center;
+  .thumbnail{
+    background-color: $blockGrey;
+    height:220px;
+  }
   a{
     h2{
       text-align: center;
