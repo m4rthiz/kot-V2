@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Artiste</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ artiste.id }}</td>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <td>{{ artiste.firstName }}</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>{{ artiste.lastName }}</td>
+            </tr>
+            <tr>
+                <th>Instruments</th>
+                <td>{% if artiste.instruments %}{{ artiste.instruments|join(', ') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Photo</th>
+                <td>{{ artiste.photo }}</td>
+            </tr>
+            <tr>
+                <th>Partocirculaire</th>
+                <td>{{ artiste.partoCirculaire }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ artiste.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_artiste_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('admin_artiste_edit', { 'id': artiste.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

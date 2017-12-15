@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Spectacle</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ spectacle.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ spectacle.title }}</td>
+            </tr>
+            <tr>
+                <th>Subtitle</th>
+                <td>{{ spectacle.subtitle }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ spectacle.description }}</td>
+            </tr>
+            <tr>
+                <th>Images</th>
+                <td>{% if spectacle.images %}{{ spectacle.images|join(', ') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Videos</th>
+                <td>{% if spectacle.videos %}{{ spectacle.videos|join(', ') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_spectacle_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('admin_spectacle_edit', { 'id': spectacle.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

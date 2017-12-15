@@ -1,0 +1,49 @@
+{% extends ':admin:baseAdmin.html.twig' %}
+
+{% block body %}
+    <h1>Artistes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Instruments</th>
+                <th>Photo</th>
+                <th>Partocirculaire</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for artiste in artistes %}
+            <tr>
+                <td><a href="{{ path('admin_artiste_show', { 'id': artiste.id }) }}">{{ artiste.id }}</a></td>
+                <td>{{ artiste.firstName }}</td>
+                <td>{{ artiste.lastName }}</td>
+                <td>{% if artiste.instruments %}{{ artiste.instruments|join(', ') }}{% endif %}</td>
+                <td>{{ artiste.photo }}</td>
+                <td>{{ artiste.partoCirculaire }}</td>
+                <td>{{ artiste.description }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('admin_artiste_show', { 'id': artiste.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('admin_artiste_edit', { 'id': artiste.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_artiste_new') }}">Create a new artiste</a>
+        </li>
+    </ul>
+{% endblock %}

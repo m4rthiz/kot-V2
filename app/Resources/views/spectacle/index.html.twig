@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Spectacles list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Subtitle</th>
+                <th>Description</th>
+                <th>Images</th>
+                <th>Videos</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for spectacle in spectacles %}
+            <tr>
+                <td><a href="{{ path('admin_spectacle_show', { 'id': spectacle.id }) }}">{{ spectacle.id }}</a></td>
+                <td>{{ spectacle.title }}</td>
+                <td>{{ spectacle.subtitle }}</td>
+                <td>{{ spectacle.description }}</td>
+                <td>{% if spectacle.images %}{{ spectacle.images|join(', ') }}{% endif %}</td>
+                <td>{% if spectacle.videos %}{{ spectacle.videos|join(', ') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('admin_spectacle_show', { 'id': spectacle.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('admin_spectacle_edit', { 'id': spectacle.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_spectacle_new') }}">Create a new spectacle</a>
+        </li>
+    </ul>
+{% endblock %}
