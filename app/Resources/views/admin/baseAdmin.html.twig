@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}{% endblock %} - Kotekan</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    {% include ':components:head.html.twig' %}
+
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/admin.css') }}"/>
+</head>
+<body>
+<header>
+    <div class="col-md-2">
+        <h3><i class="fa fa-user"></i> Admin</h3>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li class="sidenav-user">Artistes
+            {#<a href="{{ path('') }}">
+                <i class="fa fa-address-book"></i> Artistes
+            </a>#}
+        </li>
+        <li class="sidenav-publicpage">Spectacles
+           {# <a href="{{ path('') }}">
+                <i class="fa fa-address-book"></i> Spectacles
+            </a>#}
+        </li>
+        <li class="sidenav-project">Agenda
+            {#<a href="{{ path('') }}">
+                <i class="fa fa-address-book-o"></i> agenda
+            </a>#}
+        </li>
+    </ul>
+</nav>
+<section>
+    <div class="container-fluid">
+        <div class="content">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+</section>
+<footer class="page-footer">
+    footer et cet fois pas un truc moche :D
+</footer>
+
+{% include 'components/script.html.twig' %}
+{% block javascripts %}{% endblock %}
+</body>
+</

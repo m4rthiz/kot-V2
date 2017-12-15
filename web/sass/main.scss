@@ -31,13 +31,15 @@
 @import 'partials/components/article';
 
 /**
-*************************** Pagess *********************
+*************************** Pages *********************
  */
 @import "partials/pages/agenda";
 @import "partials/pages/equipe";
 @import "partials/pages/spectacles";
 @import "partials/pages/partenaires";
-
+/**
+*************************** Pages Admin *********************
+ */
 
 /*@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro');
 @import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");*/
@@ -49,10 +51,12 @@
 [class*="col-"]{
   border: 2px solid green;
 }
+/home/mar/projetsSymfony/kotekanV2/web/css/main.css
+/home/mar/projetsSymfony/kotekanV2/web/sass/main.scss
 */
 
 .container-fluid{
-  padding:0px;
+  padding:2px;
 
 }
 body{

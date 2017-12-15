@@ -1,0 +1,15 @@
+header {
+  border-bottom: 2px solid red;
+  color:$font;
+  background-color: #000000;
+  font-size: 1em;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  h3{
+    color: #FFF;
+    font-size: 2em;
+    margin: 10px;
+  }
+}

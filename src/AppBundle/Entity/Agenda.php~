@@ -46,7 +46,6 @@ class Agenda
      * @var string
      *
      * @ORM\Column(name="spectacle", type="string", length=255)
-     * @ORM\OneToOne(targetEntity="spectacle", mappedBy="date")
      */
     private $spectacle;
 

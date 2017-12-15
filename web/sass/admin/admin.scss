@@ -1,0 +1,34 @@
+
+/**
+*************************** RESET *********************
+*/
+@import '../partials/reset';
+/**
+*************************** Variable *********************
+ */
+@import '../partials/variables';
+
+/**
+*************************** Media Querie *********************
+ */
+@import '../partials/queries/tablette';
+@import '../partials/queries/smartphone';
+/**
+*************************** Pages *********************
+ */
+@import "partials/sidenav";
+@import "partials/header";
+
+
+body {
+  background: $bodyAdmin;
+  height: 100vh;
+}
+h1 {
+    font-size: 3em;
+  margin: 0 5px 10px -20px;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 200;
+  top: 0;
+}

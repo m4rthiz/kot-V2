@@ -3,7 +3,6 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Spectacle
@@ -74,20 +73,14 @@ class Spectacle
      */
     private $partners;
 
-    /**
-     *
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Agenda", inversedBy="spectacle")
-     */
-    private $date;
-
 
     /**
      * Constructor
      */
     public function __construct()
     {
-        $this->distribution = new ArrayCollection();
-        $this->partners = new ArrayCollection();
+        $this->distribution = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->partners = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -189,6 +182,7 @@ class Spectacle
     /**
      * Get distribution
      *
+     * @return array
      */
     public function getDistribution()
     {
@@ -284,6 +278,7 @@ class Spectacle
     /**
      * Get partners
      *
+     *
      */
     public function getPartners()
     {
@@ -300,7 +295,7 @@ class Spectacle
      *
      * @return Spectacle
      */
-    public function addDistribution(Artiste $distribution)
+    public function addDistribution(\AppBundle\Entity\Artiste $distribution)
     {
         $this->distribution[] = $distribution;
 
@@ -312,7 +307,7 @@ class Spectacle
      *
      * @param \AppBundle\Entity\Artiste $distribution
      */
-    public function removeDistribution(Artiste $distribution)
+    public function removeDistribution(\AppBundle\Entity\Artiste $distribution)
     {
         $this->distribution->removeElement($distribution);
     }
@@ -324,7 +319,7 @@ class Spectacle
      *
      * @return Spectacle
      */
-    public function addPartner(Partner $partner)
+    public function addPartner(\AppBundle\Entity\Partner $partner)
     {
         $this->partners[] = $partner;
 
@@ -336,7 +331,7 @@ class Spectacle
      *
      * @param \AppBundle\Entity\Partner $partner
      */
-    public function removePartner(Partner $partner)
+    public function removePartner(\AppBundle\Entity\Partner $partner)
     {
         $this->partners->removeElement($partner);
     }

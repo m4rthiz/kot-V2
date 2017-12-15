@@ -14,7 +14,7 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
+        return $this->render('pages/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')) . DIRECTORY_SEPARATOR,
         ]);
     }
@@ -24,7 +24,7 @@ class DefaultController extends Controller
      */
     public function contactAction()
     {
-        return $this->render(':default/pages:contact.html.twig');
+        return $this->render(':pages:contact.html.twig');
     }
 
     /**
@@ -32,7 +32,7 @@ class DefaultController extends Controller
      */
     public function actionAction()
     {
-        return $this->render(':default/pages:action.html.twig');
+        return $this->render(':pages:action.html.twig');
     }
 
     /**
@@ -40,7 +40,7 @@ class DefaultController extends Controller
      */
     public function agendaAction()
     {
-        return $this->render(':default/pages:agenda.html.twig');
+        return $this->render(':pages:agenda.html.twig');
     }
 
 
@@ -49,7 +49,7 @@ class DefaultController extends Controller
      */
     public function creditsAction()
     {
-        return $this->render(':default/pages:credits.html.twig');
+        return $this->render(':pages:credits.html.twig');
     }
 
 
@@ -58,7 +58,7 @@ class DefaultController extends Controller
      */
     public function equipeAction()
     {
-        return $this->render(':default/pages:equipe.html.twig');
+        return $this->render(':pages:equipe.html.twig');
     }
 
     /**
@@ -66,7 +66,7 @@ class DefaultController extends Controller
      */
     public function mentionsAction()
     {
-        return $this->render(':default/pages:mentions.html.twig');
+        return $this->render(':pages:mentions.html.twig');
     }
 
     /**
@@ -74,7 +74,7 @@ class DefaultController extends Controller
      */
     public function partenairesAction()
     {
-        return $this->render(':default/pages:partenaires.html.twig');
+        return $this->render(':pages:partenaires.html.twig');
     }
 
     /**
@@ -82,7 +82,7 @@ class DefaultController extends Controller
      */
     public function photosAction()
     {
-        return $this->render(':default/pages:photos.html.twig');
+        return $this->render(':pages:photos.html.twig');
     }
 
     /**
@@ -90,7 +90,7 @@ class DefaultController extends Controller
      */
     public function spectaclesAction()
     {
-        return $this->render(':default/pages:spectacles.html.twig');
+        return $this->render(':pages:spectacles.html.twig');
     }
 
     /**
@@ -98,7 +98,7 @@ class DefaultController extends Controller
      */
     public function videoAction()
     {
-        return $this->render(':default/pages:video.html.twig');
+        return $this->render(':pages:video.html.twig');
     }
 
 
@@ -107,7 +107,7 @@ class DefaultController extends Controller
      */
     public function ecoutesAction()
     {
-        return $this->render(':default/pages:ecoutes.html.twig');
+        return $this->render(':pages:ecoutes.html.twig');
     }
 
 }

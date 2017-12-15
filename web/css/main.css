@@ -330,7 +330,7 @@ textarea {
     width: 100%; }
 
 /**
-*************************** Pagess *********************
+*************************** Pages *********************
  */
 .event {
   margin: 20px;
@@ -393,6 +393,9 @@ textarea {
   width: 100px;
   margin: 10px; }
 
+/**
+*************************** Pages Admin *********************
+ */
 /*@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Source+Sans+Pro');
 @import url("http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css");*/
 /*
