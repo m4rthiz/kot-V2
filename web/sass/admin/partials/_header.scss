@@ -1,9 +1,8 @@
 header {
-  border-bottom: 2px solid red;
   color:$font;
-  background-color: #000000;
+  background-color: $blockGrey;
   font-size: 1em;
-  height: 50px;
+  height: 60px;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -11,5 +10,8 @@ header {
     color: #FFF;
     font-size: 2em;
     margin: 10px;
+  }
+  img{
+    width: 133px;
   }
 }

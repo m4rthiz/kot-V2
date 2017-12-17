@@ -14,26 +14,27 @@
 <body>
 <header>
     <div class="col-md-2">
-        <h3><i class="fa fa-user"></i> Admin</h3>
+        <img src="{{ asset('img/logo-k-V2.png') }}" class="" alt="">
+
+    </div>
+    <div class="col-md-10">
+        <h3> Administration du site</h3>
     </div>
 </header>
 <nav>
     <ul>
-        <li class="sidenav-user">Artistes<i class="fa fa-address-book"></i>
-            {#<a href="{{ path('') }}">
-                 Artistes
-            </a>#}
-        </li>
-        <li class="sidenav-publicpage">Spectacles<i class="fa fa-address-book"></i>
-           {# <a href="{{ path('') }}">
-                 Spectacles
-            </a>#}
-        </li>
-        <li class="sidenav-project">Agenda<i class="fa fa-address-book-o"></i>
-            {#<a href="{{ path('') }}">
-                 agenda
-            </a>#}
-        </li>
+        <a href="{{ path('admin_artiste_index') }}">
+            <li class="sidenav-user"><i class="fa fa-user"></i> Artistes</li>
+        </a>
+        <a href="{{ path('admin_spectacle_index') }}">
+            <li class="sidenav-publicpage"><i class="fa fa-music"></i> Spectacles</li>
+        </a>
+        <a href="{{ path('admin_agenda_index') }}">
+            <li class="sidenav-project"><i class="fa fa-calendar"></i> Agenda</li>
+        </a>
+        <a href="{{ path('admin_partner_index') }}">
+            <li class="sidenav-project"><i class="fa fa-handshake-o"></i> Partenaires</li>
+        </a>
     </ul>
 </nav>
 <section>
@@ -45,7 +46,7 @@
     </div>
 </section>
 <footer class="page-footer">
-    footer et cet fois pas un truc moche :D
+
 </footer>
 
 {% include 'components/script.html.twig' %}

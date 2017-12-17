@@ -1,4 +1,5 @@
 /**
+node-sass --watch web/sass/admin/admin.scss web/css/admin.css
 *************************** RESET *********************
 */
 /*!
@@ -211,22 +212,23 @@ nav {
   height: 100%;
   position: fixed;
   left: 0;
-  top: 50px;
+  top: 60px;
   color: #FFFFFF;
-  background-color: #000000; }
+  background-color: rgba(138, 138, 138, 0.72); }
   nav ul {
     font-size: 1.5em;
     list-style: none; }
     nav ul li {
-      margin-bottom: 2px;
-      padding: 0; }
+      margin: 20px 10px;
+      padding: 0;
+      text-decoration: none;
+      color: #FFFFFF; }
 
 header {
-  border-bottom: 2px solid red;
   color: #FFFFFF;
-  background-color: #000000;
+  background-color: rgba(138, 138, 138, 0.72);
   font-size: 1em;
-  height: 50px;
+  height: 60px;
   position: fixed;
   width: 100%;
   z-index: 100; }
@@ -234,6 +236,51 @@ header {
     color: #FFF;
     font-size: 2em;
     margin: 10px; }
+  header img {
+    width: 133px; }
+
+.content {
+  margin: 100px 0px 0px 250px; }
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px; }
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td,
+table {
+  border: 1px solid #E3E3E3; }
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  text-align: center; }
+
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd; }
+
+table > tbody > tr:nth-of-type(odd) {
+  background-color: white; }
+
+table > tbody > tr:nth-of-type(even) {
+  background-color: white; }
+
+thead {
+  background-color: #ffb020;
+  color: white; }
 
 body {
   background: #FFFFFF;

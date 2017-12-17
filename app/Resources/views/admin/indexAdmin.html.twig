@@ -1,18 +1,21 @@
 {% extends ':admin:baseAdmin.html.twig' %}
 {% block title %}Admin home{% endblock %}
 {% block body %}
-    <h2>Bienvenue dans la partie admin :</h2>
     <div class="jumbotron col-md-8 col-md-offset-3">
         <h3>Artistes</h3>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">gérer</a></p>
+        <p><a class="btn btn-primary btn-lg" href="{{ path('admin_artiste_index') }}" role="button">gérer</a></p>
     </div>
     <div class="jumbotron col-md-8 col-md-offset-3">
         <h3>Spectacles</h3>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">gérer</a></p>
+        <p><a class="btn btn-primary btn-lg" href="{{ path('admin_spectacle_index') }}" role="button">gérer</a></p>
     </div>
     <div class="jumbotron col-md-8 col-md-offset-3">
-        <h3>dates</h3>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">gérer</a></p>
+        <h3>Dates</h3>
+        <p><a class="btn btn-primary btn-lg" href="{{ path('admin_agenda_index') }}" role="button">gérer</a></p>
+    </div>
+    <div class="jumbotron col-md-8 col-md-offset-3">
+        <p><a class="btn btn-primary btn-lg" href="{{ path('admin_partner_index') }}" role="button">gérer</a></p>
+        <h3>Partenaires</h3>
     </div>
     </div>
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'admin/baseAdmin.html.twig' %}
 
 {% block body %}
     <h1>Agenda</h1>
@@ -11,7 +11,7 @@
             </tr>
             <tr>
                 <th>Date</th>
-                <td>{% if agenda.date %}{{ agenda.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if agenda.date %}{{ agenda.date|date('Y-m-d') }}{% endif %}</td>
             </tr>
             <tr>
                 <th>Lieu</th>

@@ -1,5 +1,6 @@
 
 /**
+node-sass --watch web/sass/admin/admin.scss web/css/admin.css
 *************************** RESET *********************
 */
 @import '../partials/reset';
@@ -18,6 +19,8 @@
  */
 @import "partials/sidenav";
 @import "partials/header";
+@import "partials/content";
+@import "partials/table";
 
 
 body {
